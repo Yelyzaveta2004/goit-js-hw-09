@@ -23,3 +23,54 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.gallery {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  margin: 12px;
+}
+
+.gallery-link {
+  text-decoration: none;
+}
+
+.gallery-image {
+  max-width: 360px;
+  max-height: 200px ;
+  display: block;
+}
+/*=============================================*/
+.feedback-form {
+  width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+
+.login-form input[type="email"]
+{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(91, 91, 247);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
