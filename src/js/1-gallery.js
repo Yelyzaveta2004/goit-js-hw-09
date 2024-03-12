@@ -1,4 +1,6 @@
-const gallery = document.querySelector('.gallery');
+import SimpleLightbox from 'simplelightbox';
+    import 'simplelightbox/dist/simple-lightbox.min.css';
+    const gallery = document.querySelector('.gallery');
 const images = [
      {
     preview:
@@ -82,9 +84,7 @@ const images = [
     const galleryMarkup = images.reduce((acc, image) => acc + createGalleryItem(image), '');
     gallery.insertAdjacentHTML('beforeend', galleryMarkup);
     
-    // Ініціалізує. SimpleLightbox
-    import SimpleLightbox from 'simplelightbox';
-    import 'simplelightbox/dist/simple-lightbox.min.css';
+    
     
     document.addEventListener('DOMContentLoaded', function () {
         const lightbox = new SimpleLightbox('.gallery a', {
